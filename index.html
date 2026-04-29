@@ -1,0 +1,85 @@
+<!-- Developed by Yukta Badhe -->
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResumeFit Pro</title>
+  
+
+<h1>ResumeFit Pro</h1>
+<p>AI-powered resume compatibility checker</p>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header class="topbar">
+    <div>
+      <h1>Resume ATS Analyzer</h1>
+      <p>Advanced AI-based resume matching system</p>
+    </div>
+    <button id="themeToggle" class="btn secondary">Toggle Theme</button>
+  </header>
+
+  <div class="grid">
+    <section class="card">
+      <label>Upload Resume</label>
+      <input type="file" id="resumeFile" accept=".txt">
+
+      <label>Resume Text</label>
+      <textarea id="resumeText" placeholder="Paste resume text..."></textarea>
+
+      <label>Job Description</label>
+      <textarea id="jobDescription" placeholder="Paste job description..."></textarea>
+
+      <div class="btn-group">
+        <button id="analyzeBtn" class="btn primary">Analyze</button>
+        <button id="sampleBtn" class="btn secondary">Load Sample</button>
+        <button onclick="window.print()" class="btn secondary">Export</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>ATS Score</h2>
+      <div id="scoreValue" class="score">0%</div>
+      <div class="meter">
+        <div id="meterBar" class="meter-bar"></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span>Keyword Match</span>
+          <strong id="keywordPct">0%</strong>
+        </div>
+        <div class="stat">
+          <span>Sections</span>
+          <strong id="sectionsFound">0/5</strong>
+        </div>
+        <div class="stat">
+          <span>Impact Bullets</span>
+          <strong id="impactCount">0</strong>
+        </div>
+      </div>
+
+      <h3>Matched Skills</h3>
+      <div id="matchedKeywords" class="chips"></div>
+
+      <h3>Missing Skills</h3>
+      <div id="missingKeywords" class="chips"></div>
+
+      <h3>Suggestions</h3>
+      <div id="suggestions" class="chips"></div>
+
+      <h3>Recommended Role</h3>
+      <div id="rolePrediction" class="chips"></div>
+    </section>
+  </div>
+  <footer class="footer">
+  Developed by Yukta Badhe © 2026
+</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
