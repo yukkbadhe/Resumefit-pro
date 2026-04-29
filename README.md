@@ -38,10 +38,7 @@ ATS-Resume-Checker/
 │── script.js
 │── README.md
 
-## Screenshots
-
-Add project screenshots here for better presentation.
-
+#
 ## Future Improvements
 
 - PDF resume upload
@@ -52,4 +49,4 @@ Add project screenshots here for better presentation.
 ## Author
 
 Yukta Badhe
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/yukkbadhe
